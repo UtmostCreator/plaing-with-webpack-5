@@ -10,13 +10,33 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/button-styles.js":
+/*!******************************!*\
+  !*** ./src/button-styles.js ***!
+  \******************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"red\": () => (/* binding */ red),\n/* harmony export */   \"blue\": () => (/* binding */ blue),\n/* harmony export */   \"styleButton\": () => (/* binding */ styleButton)\n/* harmony export */ });\nconst red = 'red';\r\nconst blue = 'blue';\r\n\r\nconst styleButton = color => `color: ${color}`;\r\n\r\n\n\n//# sourceURL=webpack://webpack_lsns/./src/button-styles.js?");
+
+/***/ }),
+
+/***/ "./src/button.js":
+/*!***********************!*\
+  !*** ./src/button.js ***!
+  \***********************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"makeBtn\": () => (/* binding */ makeBtn)\n/* harmony export */ });\n// return btn and label\r\nconst makeBtn = btnName => {\r\n    return `Btn: ${btnName}`\r\n};\r\n\r\n\n\n//# sourceURL=webpack://webpack_lsns/./src/button.js?");
+
+/***/ }),
+
 /***/ "./src/footer.js":
 /*!***********************!*\
   !*** ./src/footer.js ***!
   \***********************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"top\": () => (/* binding */ top),\n/* harmony export */   \"bottom\": () => (/* binding */ bottom)\n/* harmony export */ });\nconst top = \"top\";\r\nconst bottom = \"bottom\";\r\n\r\n// const top = \"top\";\r\n// const bottom = \"bottom\";\r\n\r\n\r\n// export.top = top;\r\n// export.bottom = bottom;\n\n//# sourceURL=webpack://webpack_lsns/./src/footer.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"top\": () => (/* binding */ top),\n/* harmony export */   \"bottom\": () => (/* binding */ bottom)\n/* harmony export */ });\nconst top = \"top\";\r\nconst bottom = \"bottom\";\r\n\r\n\r\n// const top = \"top\";\r\n// const bottom = \"bottom\";\r\n\r\n\r\n// export.top = top;\r\n// export.bottom = bottom;\n\n//# sourceURL=webpack://webpack_lsns/./src/footer.js?");
 
 /***/ }),
 
@@ -26,7 +46,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _nav_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./nav.js */ \"./src/nav.js\");\n/* harmony import */ var _footer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./footer.js */ \"./src/footer.js\");\n\r\n\r\n\r\nconsole.log((0,_nav_js__WEBPACK_IMPORTED_MODULE_0__.default)(), _footer_js__WEBPACK_IMPORTED_MODULE_1__.top, _footer_js__WEBPACK_IMPORTED_MODULE_1__.bottom);\n\n//# sourceURL=webpack://webpack_lsns/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _nav_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./nav.js */ \"./src/nav.js\");\n/* harmony import */ var _footer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./footer.js */ \"./src/footer.js\");\n/* harmony import */ var _button_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./button.js */ \"./src/button.js\");\n/* harmony import */ var _button_styles_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./button-styles.js */ \"./src/button-styles.js\");\n\r\n\r\n\r\n\r\n\r\nconsole.log((0,_nav_js__WEBPACK_IMPORTED_MODULE_0__.default)(), _footer_js__WEBPACK_IMPORTED_MODULE_1__.top, _footer_js__WEBPACK_IMPORTED_MODULE_1__.bottom, (0,_button_js__WEBPACK_IMPORTED_MODULE_2__.makeBtn)('BTN one'));\r\nconsole.log((0,_nav_js__WEBPACK_IMPORTED_MODULE_0__.default)(), _footer_js__WEBPACK_IMPORTED_MODULE_1__.top, _footer_js__WEBPACK_IMPORTED_MODULE_1__.bottom, (0,_button_styles_js__WEBPACK_IMPORTED_MODULE_3__.styleButton)('Any Button'));\n\n//# sourceURL=webpack://webpack_lsns/./src/index.js?");
 
 /***/ }),
 

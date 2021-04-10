@@ -1,3 +1,5 @@
+import './footer.css'; // only get the styles (w/o insertion it into the DOM)
+import buttonStyles from './button.css'; // only get the styles (w/o insertion it into the DOM)
 import nav from "./nav.js";
 import {footer} from "./footer.js";
 import {makeBtn} from './button.js'

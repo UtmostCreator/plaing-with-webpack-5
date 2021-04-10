@@ -26,7 +26,12 @@ module.exports = (env, args) => {
                 rules: [
                     {
                         test: /\.jpe?g$/,
-                        use: ['url-loader']
+                        // the same thing 1st is a shorthand
+                        // use: ['url-loader'] == use: [{loader: 'url-loader'}]
+                        // in production it is put to dist. In dev it will be saved in memory.
+                        use: [{loader: 'url-loader', options: {
+                            limit: 5000 // 5000 bytes; otherwise it (file-loader) takes a file to a dist directory and return the HASH url of where that file wil be
+                        }}]
                     }
                 ]
             },

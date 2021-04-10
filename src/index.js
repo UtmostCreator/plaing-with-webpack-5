@@ -10,9 +10,9 @@ import makeImage from './image.js'
 
 // this is usually abstracted with a loader
 // custom HMR is it is not supported:
-if (hot.module.accepts()) {
-    // import('youFileToReload.ext'); // IT MUST BE DONE per module!
-}
+// if (hot.module.accepts()) {
+//     // import('youFileToReload.ext'); // IT MUST BE DONE per module!
+// }
 
 
 console.log(nav(), footer, makeBtn('BTN one'));

@@ -1,7 +1,12 @@
 import nav from "./nav.js";
-import {top, bottom} from "./footer.js";
+import {footer} from "./footer.js";
 import {makeBtn} from './button.js'
 import {styleButton} from './button-styles.js'
 
-console.log(nav(), top, bottom, makeBtn('BTN one'));
-console.log(nav(), top, bottom, styleButton('Any Button'));
+console.log(nav(), footer, makeBtn('BTN one'));
+console.log(nav(), footer, styleButton('cyan'));
+
+const btnOne = makeBtn('BTN one')
+btnOne.style = styleButton('cyan');
+document.body.appendChild(btnOne);
+document.body.appendChild(footer);

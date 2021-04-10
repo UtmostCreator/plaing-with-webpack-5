@@ -1,5 +1,5 @@
-const red = 'red';
-const blue = 'blue';
+const red = `color: red`;
+const blue = `color: blue`;
 
 const styleButton = color => `color: ${color}`;
 

@@ -22,6 +22,14 @@ module.exports = (env, args) => {
             output: {
                 filename: 'bundle.js'
             },
+            module: {
+                rules: [
+                    {
+                        test: /\.jpe?g$/,
+                        use: ['url-loader']
+                    }
+                ]
+            },
             plugins: [
                 new HtmlWebpackPlugin(),
                 new webpack.ProgressPlugin(),

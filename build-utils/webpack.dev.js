@@ -1,5 +1,5 @@
 module.exports = () => ({
-    target: 'web',
+    target: 'web', // enabes hot module replacement
     output: {
         filename: '[name]_dev.js'
     },
@@ -10,5 +10,8 @@ module.exports = () => ({
                 use: ['style-loader', 'css-loader'] //how we wanna transform the file; css-loader gets the styles whereas style-loader injects in into the DOM
             }
         ]
+    },
+    devServer: {
+        // hot: true // enabes hot module replacement
     }
 })

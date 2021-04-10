@@ -1,6 +1,5 @@
 // import css from './footer.css'; // only get the styles (w/o insertion it into the DOM)
 import {red, blue} from './button-styles.js'
-
 // console.log(css); // array with 0 - path to file (metadata), 1 - styles string
 
 const top = document.createElement('div');

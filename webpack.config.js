@@ -30,10 +30,13 @@ module.exports = (env, args) => { // {mode, presets} = {mode: 'production', pres
                         // the same thing 1st is a shorthand
                         // use: ['url-loader'] == use: [{loader: 'url-loader'}]
                         // in production it is put to dist. In dev it will be saved in memory.
-                        use: [{loader: 'url-loader', options: {
-                            limit: 1024 // 5000 bytes; otherwise it (file-loader) takes a file to a dist directory and return the HASH url of where that file wil be
-                        }}]
-                    }
+                        use: [{
+                            loader: 'url-loader', options: {
+                                limit: 1024 // 5000 bytes; otherwise it (file-loader) takes a file to a dist directory and return the HASH url of where that file wil be
+                            }
+                        }]
+                    },
+                    { test: /\.ts$/, loader: 'ignore-loader' } // remove if you want to work with this + use presets=typescript
                 ]
             },
             plugins: [

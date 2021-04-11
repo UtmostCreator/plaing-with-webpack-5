@@ -8,7 +8,7 @@ import imageUrl from './icon.jpg';
 import makeImage from './image.js';
 import Foo from './foo.ts';
 
-Foo.show()
+// Foo.show(); // only works with TS loader
 
 
 // this is usually abstracted with a loader

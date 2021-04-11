@@ -1,4 +1,5 @@
 module.exports = () => ({
+    devtool: 'source-map',
     target: 'web', // enabes hot module replacement
     output: {
         filename: '[name]_dev.js'

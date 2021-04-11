@@ -5,7 +5,10 @@ import {footer} from "./footer.js";
 import {makeBtn} from './button.js'
 import {styleButton} from './button-styles.js'
 import imageUrl from './icon.jpg';
-import makeImage from './image.js'
+import makeImage from './image.js';
+import Foo from './foo.ts';
+
+Foo.show()
 
 
 // this is usually abstracted with a loader

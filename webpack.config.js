@@ -9,9 +9,13 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = (env, args) => { // {mode, presets} = {mode: 'production', presets: []}
     // console.log(mode, presets);
     let getMode = (mode, short = false) => {
-        return short ? (mode.production ? 'prod' : 'dev') : (mode.production ? 'production' : 'development')
+        if (short) {
+            return mode.hasOwnProperty('production') ? 'prod' : 'dev';
+        }
+        return ;
     };
     console.log(env, args);
+    console.log('main PRESTS: ', env.presets);
     console.log(env.development);
     return merge(
         {
